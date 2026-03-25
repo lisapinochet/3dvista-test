@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Test 3DVista</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* 🔥 empêche scroll horizontal */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            padding: 16px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(16px, 4vw, 32px); /* 🔥 responsive */
+            margin: 0;
+        }
+
+        p {
+            font-size: clamp(12px, 3vw, 18px);
+            margin-top: 8px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello World !</h1>
+<div class="container">
+    <div>
+        <p>T°C : 45 °C</p>
+    </div>
+</div>
 </body>
 </html>
